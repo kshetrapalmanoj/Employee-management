@@ -1,0 +1,23 @@
+<h3 align="center">Update Employee</h3>
+<div align="center">
+<div style="width: 400px;" *ngIf="employee">
+  <form>
+      
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" id="name" required [(ngModel)]="employee.name" name="name">
+    </div>
+
+    <div class="form-group">
+      <label for="salary">Salary</label>
+      <input type="text" class="form-control" id="salary" required [(ngModel)]="employee.salary" name="salary">
+    </div>
+
+    <button type="submit" (click)="updateEmp(employee)"  class="btn btn-success"  routerLink = "/">Update</button>
+  </form>
+</div><br>
+<button mat-raised-button color="primary" routerLink = "/">Back</button>
+</div>
+<!-- <div>
+  Current Count: {{ count$ | async }}
+</div> -->

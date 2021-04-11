@@ -1,0 +1,12 @@
+table{
+   border-radius: 10;
+   color:rgb(47, 65, 50);
+   background-color:beige;
+   text-align:center;
+   /* width:60%; */
+} 
+
+ th{
+    background-color:cornsilk;
+    color:purple
+}

@@ -1,0 +1,45 @@
+<p align="center">add-employees works!</p>
+<div align="center">
+<div align="center" *ngIf="employee">
+  <div>Id:{{employee.id}}</div>
+  <div>Name:{{employee.name}}</div>
+  <div>Salary:{{employee.salary}}</div><br>
+</div>
+
+ <div style="width: 400px;" *ngIf="employee">
+    <form>
+      
+    <div>
+      <mat-form-field>
+        <label for=id>Id</label>
+        <input class="form-control" id="id" required [(ngModel)]="employee.id" name="id" placeholder="Enter your id" required>
+      </mat-form-field>
+    </div>
+
+    <div>
+        <mat-form-field >
+          <label for=name>Name</label>
+          <input class="form-control" id="name" required [(ngModel)]="employee.name" name="name" placeholder="Enter your name">
+        </mat-form-field>
+  
+    </div>
+
+    <div>
+      <mat-form-field >
+        <label for="salary">Salary</label>
+        <input class="form-control" id="salary" required [(ngModel)]="employee.salary" name="salary" placeholder="Enter your salary">
+      </mat-form-field>
+    </div><br>
+    <div>
+      <button type="submit" (click)="submit(employee)"  class="btn btn-primary" routerLink = "/" >Submit</button>
+      
+    </div>
+    
+    </form>
+</div><br>
+<button mat-raised-button color="primary" routerLink = "/">Back</button>
+</div>
+<!-- 
+  <div>
+  Current Count: {{ count$ | async }}
+  </div> -->

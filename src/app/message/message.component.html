@@ -1,0 +1,8 @@
+
+<div *ngIf="getMessage()" class="test">
+    <h3>Messages</h3>
+     <p *ngFor="let message of getMessage()">{{message}}</p>
+
+    <input type="reset" (click)="reset()" value="Reset" class="btn btn-warning">
+
+</div>
